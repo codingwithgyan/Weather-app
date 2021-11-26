@@ -10,6 +10,8 @@ window.addEventListener("load", function () {
         try {
           let res = await fetch(url);
           let data = await res.json();
+          var more=document.getElementById("more");
+          more.style.display="grid";
           let d=new Date();
           let hrs=d.getHours();
           let show = document.getElementById("show");
